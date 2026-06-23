@@ -140,11 +140,11 @@ img{max-width:100%;display:block}
 .device-placeholder{position:relative;background:#000;overflow:hidden;margin:0 auto}
 .device-placeholder::after{content:'';position:absolute;inset:0;pointer-events:none;z-index:10;border:1px solid rgba(255,255,255,.08)}
 .app-screenshot{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:5}
-.device-placeholder.phone{aspect-ratio:9/19.5;width:100%;max-width:280px;border-radius:40px;border:6px solid #1c1c1e;box-shadow:0 40px 80px rgba(0,0,0,.4)}
+.device-placeholder.phone{aspect-ratio:9/19.5;width:100%;max-width:280px;border-radius:40px;border:6px solid #1c1c1e;box-shadow:0 30px 60px rgba(41,151,255,.15),0 0 0 1px rgba(255,255,255,.05)}
 .device-placeholder.phone::after{border-radius:34px}
-.device-placeholder.wide{aspect-ratio:16/10;width:100%;border-radius:16px;border:4px solid #1c1c1e;box-shadow:0 30px 60px rgba(0,0,0,.3)}
+.device-placeholder.wide{aspect-ratio:16/10;width:100%;border-radius:16px;border:4px solid #1c1c1e;box-shadow:0 30px 60px rgba(41,151,255,.15),0 0 0 1px rgba(255,255,255,.05)}
 .device-placeholder.wide::after{border-radius:12px}
-.s-cream .device-placeholder{box-shadow:0 40px 80px rgba(0,0,0,.15)}
+.s-cream .device-placeholder{box-shadow:0 40px 80px rgba(0,0,0,.15),0 0 0 1px rgba(0,0,0,.05)}
 
 /* Device inner placeholders */
 .device-screen{position:relative;z-index:1;padding:16px}
@@ -195,12 +195,9 @@ img{max-width:100%;display:block}
 .app-img.active{opacity:1;z-index:2;pointer-events:auto}
 
 /* ─── PDF REVEAL ─── */
-.pdf-reveal-container{position:relative;width:100%;aspect-ratio:16/10;border-radius:16px;overflow:hidden;border:1px solid var(--border-light);background:#000}
-.reveal-special{opacity:0;transform:translateY(40px);transition:all 1s cubic-bezier(.16,1,.3,1)}
-.reveal-special.visible{opacity:1;transform:none}
-.pdf-screenshot{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.16,1,.3,1),opacity 1.2s ease;opacity:.4;transform:scale(1.05)}
-.reveal-special.visible .pdf-screenshot{opacity:1;transform:scale(1)}
-.reveal-special.visible .pdf-logo-wrapper{top:20px;left:auto;right:20px;transform:scale(0.7)}
+.pdf-reveal-container{position:relative;width:100%;aspect-ratio:16/10;border-radius:16px;overflow:hidden;border:1px solid var(--border-light);background:#000;box-shadow:0 30px 60px rgba(41,151,255,.15),0 0 0 1px rgba(255,255,255,.05)}
+.pdf-screenshot{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:1}
+.pdf-logo-wrapper{position:absolute;top:20px;right:20px;transform:scale(0.7);z-index:10}
 .pdf-file-icon{width:56px;height:76px;background:#fff;border-radius:6px 20px 6px 6px;position:relative;display:flex;align-items:center;justify-content:center}
 .pdf-file-icon::before{content:'';position:absolute;top:0;right:0;width:20px;height:20px;background:#e5e5e5;border-radius:0 20px 0 6px}
 .pdf-text{color:#ff3b30;font-weight:900;font-size:1.1rem;letter-spacing:1px;margin-top:10px;z-index:2}
@@ -227,7 +224,7 @@ img{max-width:100%;display:block}
 .edudb-section{padding:var(--section-pad) var(--gutter);background:var(--bg);position:relative;overflow:hidden;border-bottom:1px solid var(--border-light)}
 .edudb-inner{max-width:var(--max);margin:0 auto;text-align:center}
 .edudb-showcase{display:flex;flex-direction:column;align-items:center;margin-top:48px}
-.edudb-graphic{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.08);box-shadow:0 20px 40px rgba(0,0,0,.3);border-radius:24px;padding:60px 20px 100px;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;min-height:320px}
+.edudb-graphic{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.08);box-shadow:0 30px 60px rgba(41,151,255,.15),0 0 0 1px rgba(255,255,255,.05);border-radius:24px;padding:60px 20px 100px;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;min-height:320px}
 .edudb-graphic::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(41,151,255,.08) 0%,transparent 60%);pointer-events:none}
 .edudb-icon{position:relative;width:110px;height:130px;margin-bottom:28px;animation:float 4s ease-in-out infinite}
 .db-layer{position:absolute;width:100%;height:45px;border-radius:50%;border:3px solid var(--accent);background:var(--bg)}
