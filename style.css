@@ -53,8 +53,8 @@ img{max-width:100%;display:block}
 /* ─── NAV ─── */
 .navbar{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);background:rgba(10,10,10,.85);border-bottom:1px solid var(--border-light)}
 .nav-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 var(--gutter);height:var(--nav-h)}
-.nav-logo{font-weight:800;font-size:1.1rem;display:flex;align-items:center;gap:10px;color:var(--fg)}
-.nav-logo img{height:28px;width:auto;object-fit:contain}
+.nav-logo{font-weight:800;font-size:1.1rem;display:flex;align-items:center;gap:10px;color:var(--fg);z-index:200;position:relative}
+.nav-logo img{height:28px;max-height:28px;width:auto;max-width:160px;object-fit:contain;display:block}
 .nav-links{display:flex;gap:32px;list-style:none;font-size:.8rem;font-weight:500;letter-spacing:.02em}
 .nav-links a{color:var(--fg2);transition:color .3s}.nav-links a:hover{color:var(--fg)}
 .nav-cta{font-size:.75rem;padding:8px 20px;border-radius:980px;background:var(--fg);color:var(--bg);font-weight:600;transition:opacity .2s;letter-spacing:.02em}.nav-cta:hover{opacity:.8}
@@ -117,7 +117,7 @@ img{max-width:100%;display:block}
 .role-image{flex:1;display:flex;align-items:center;justify-content:center;padding:20px;min-height:300px}
 .role-content{text-align:center;max-width:400px;margin:0 auto;padding-top:32px}
 .role-content h3{font-size:1.6rem;font-weight:700;margin-bottom:8px}
-.role-content p{font-size:.95rem;color:var(--fg2-dark);line-height:1.6}
+.role-content p{font-size:.95rem;color:var(--fg2);line-height:1.6}
 
 /* ─── FEATURES ─── */
 .feature-section{padding:var(--section-pad) 0;position:relative;overflow:hidden}
@@ -222,14 +222,14 @@ img{max-width:100%;display:block}
 .edudb-section{padding:var(--section-pad) var(--gutter);background:var(--bg);position:relative;overflow:hidden;border-bottom:1px solid var(--border-light)}
 .edudb-inner{max-width:var(--max);margin:0 auto;text-align:center}
 .edudb-showcase{display:flex;flex-direction:column;align-items:center;margin-top:48px}
-.edudb-graphic{background:#ffffff;border:1px solid rgba(0,0,0,0.05);box-shadow:0 10px 30px rgba(0,0,0,0.03);border-radius:24px;padding:60px 20px 100px;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;min-height:320px}
+.edudb-graphic{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.08);box-shadow:0 20px 40px rgba(0,0,0,.3);border-radius:24px;padding:60px 20px 100px;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;min-height:320px}
 .edudb-graphic::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(41,151,255,.08) 0%,transparent 60%);pointer-events:none}
 .edudb-icon{position:relative;width:110px;height:130px;margin-bottom:28px;animation:float 4s ease-in-out infinite}
-.db-layer{position:absolute;width:100%;height:45px;border-radius:50%;border:3px solid var(--accent);background:#ffffff}
+.db-layer{position:absolute;width:100%;height:45px;border-radius:50%;border:3px solid var(--accent);background:var(--bg)}
 .db-layer:nth-child(1){top:0;z-index:3}
 .db-layer:nth-child(2){top:28px;z-index:2;border-color:rgba(41,151,255,.6)}
 .db-layer:nth-child(3){top:56px;z-index:1;border-color:rgba(41,151,255,.3)}
-.edudb-filename{font-family:'SF Mono',SFMono-Regular,Consolas,monospace;font-size:clamp(1rem,2.5vw,1.6rem);font-weight:700;color:var(--fg);background:rgba(0,0,0,.8);padding:12px 24px;border-radius:12px;border:1px solid var(--border-light);z-index:10}
+.edudb-filename{font-family:'SF Mono',SFMono-Regular,Consolas,monospace;font-size:clamp(1rem,2.5vw,1.6rem);font-weight:700;color:var(--fg);background:rgba(0,0,0,.8);padding:12px 24px;border-radius:12px;border:1px solid rgba(255,255,255,.1);z-index:10}
 .edudb-screenshot{width:100%;max-width:800px;margin:-70px auto 0;position:relative;z-index:20}
 
 /* ─── MICRO FEATURES ─── */
@@ -250,8 +250,8 @@ img{max-width:100%;display:block}
 .benefits-list{max-width:700px;margin:0 auto;text-align:left}
 .benefit-item{display:flex;gap:24px;padding:28px 0;border-bottom:1px solid var(--border-dark);align-items:flex-start}
 .benefit-number{font-size:1rem;font-weight:900;color:var(--accent);opacity:.5;min-width:32px;font-family:var(--sans)}
-.benefit-content h3{font-size:1.05rem;font-weight:700;margin-bottom:4px;color:var(--fg-dark)}
-.benefit-content p{font-size:.88rem;color:var(--fg2-dark)}
+.benefit-content h3{font-size:1.05rem;font-weight:700;margin-bottom:4px;color:var(--fg)}
+.benefit-content p{font-size:.88rem;color:var(--fg2)}
 
 /* ─── PRICING ─── */
 .pricing-section{padding:var(--section-pad) 0;border-top:1px solid var(--border-light)}
