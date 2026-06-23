@@ -10,7 +10,7 @@
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
   <nav id="navbar" class="navbar">
     <div class="nav-inner">
       <a href="#" class="nav-logo">
-        <img src="images/logo_transparent.png" alt="Cyber Edge Logo" style="height: 32px; width: auto; object-fit: contain; margin-right: 12px;">
+        <img src="images/logo_transparent.png" alt="Cyber Edge Logo">
         Cyber Edge
       </a>
       <ul class="nav-links">
@@ -31,98 +31,113 @@
       </ul>
       <a href="#kontak" class="nav-cta">Coba Gratis</a>
       <button class="nav-toggle" aria-label="Toggle menu">
-        <span></span><span></span>
+        <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#fitur">Fitur</a>
+    <a href="#cara-kerja">Cara Kerja</a>
+    <a href="#harga">Harga</a>
+    <a href="#manfaat">Manfaat</a>
+    <a href="#kontak">Kontak</a>
+    <a href="#kontak" class="btn btn-primary" style="margin-top:16px">Coba Gratis</a>
+  </div>
+
   <!-- Hero Section -->
-  <section id="hero" class="hero">
+  <section id="hero" class="hero s-dark">
     <div class="hero-content">
-      <p class="hero-eyebrow reveal">Revolusi Digitalisasi Sekolah</p>
-      <h1 class="hero-title reveal">EduTrack</h1>
-      <p class="hero-subtitle reveal">Cerdas. Cepat. Anti-Ribet.</p>
-      <p class="hero-desc reveal">Tinggalkan kertas, beralihlah ke ekosistem absensi dan akademik digital yang sesungguhnya.</p>
-      <div class="hero-ctas reveal">
-        <a href="#fitur" class="btn btn-primary">Jelajahi Fitur</a>
-        <a href="#kontak" class="btn btn-ghost">Hubungi Kami</a>
+      <div class="hero-text">
+        <p class="hero-eyebrow eyebrow reveal">Revolusi Digitalisasi Sekolah</p>
+        <h1 class="hero-title reveal">EduTrack <span class="serif-italic">Cerdas. Cepat. Anti-Ribet.</span></h1>
+        <p class="hero-subtitle body-text reveal">Tinggalkan kertas, beralihlah ke ekosistem absensi dan akademik digital yang sesungguhnya.</p>
+        <div class="hero-ctas reveal">
+          <a href="#fitur" class="btn btn-primary">Jelajahi Fitur</a>
+          <a href="#kontak" class="btn btn-ghost">Hubungi Kami</a>
+        </div>
+      </div>
+      <div class="hero-image reveal-scale">
+        <img src="images/hero-device.png" alt="Tampilan Dashboard EduTrack" class="hero-image-actual parallax">
       </div>
     </div>
-    <div class="hero-image reveal">
-      <img src="images/hero-device.png" alt="Tampilan Dashboard EduTrack" class="hero-image-actual">
-    </div>
-    <div class="hero-scroll-hint">
+    <div class="hero-scroll reveal">
+      <span>Scroll for more</span>
       <div class="scroll-line"></div>
     </div>
   </section>
 
   <!-- Stats Ticker -->
-  <section class="stats-ticker reveal">
+  <section class="stats-ticker s-cream reveal">
     <div class="ticker-inner">
-      <div class="stat-item">
+      <div class="stat-item reveal">
         <div class="stat-number"><span class="stat-counter" data-target="30">0</span><span class="stat-unit">dtk</span></div>
         <div class="stat-label">Proses Absensi</div>
       </div>
-      <div class="stat-item">
+      <div class="stat-item reveal">
         <div class="stat-number"><span class="stat-counter" data-target="100">0</span><span class="stat-unit">%</span></div>
         <div class="stat-label">Akurasi Data</div>
       </div>
-      <div class="stat-item">
+      <div class="stat-item reveal">
         <div class="stat-number"><span class="stat-counter" data-target="60">0</span><span class="stat-unit">dtk</span></div>
         <div class="stat-label">Onboarding</div>
       </div>
-      <div class="stat-item">
+      <div class="stat-item reveal">
         <div class="stat-number"><span class="stat-counter" data-target="100">0</span><span class="stat-unit">%</span></div>
         <div class="stat-label">Paperless</div>
       </div>
     </div>
   </section>
 
+  <div class="section-divider s-dark reveal">
+    <h2 class="heading-xl">We design for impact. <span class="serif-italic gradient-text">See for yourself.</span></h2>
+  </div>
+
   <!-- Cara Kerja / Roles (Split Screen) -->
-  <section id="cara-kerja" class="roles-section">
+  <section id="cara-kerja" class="roles-section s-dark">
     <div class="roles-header reveal">
-      <h2>Satu Aplikasi, Dua Peran</h2>
-      <p class="hero-desc" style="max-width: 600px; margin: 0 auto;">Antarmuka cerdas yang otomatis beradaptasi dengan peran Anda di sekolah, memberikan apa yang paling Anda butuhkan.</p>
+      <p class="eyebrow">Satu Aplikasi, Dua Peran</p>
+      <h2 class="heading-lg">Antarmuka cerdas yang otomatis beradaptasi dengan peran Anda.</h2>
     </div>
-    <div class="roles-split">
+    <div class="roles-split container">
       <div class="role-half role-admin reveal">
-        <div class="role-image">
+        <div class="role-image parallax">
           <div class="device-placeholder wide">
             <img src="images/role-admin.png" alt="Admin Screenshot" class="app-screenshot" onerror="this.style.display='none'">
           </div>
         </div>
         <div class="role-content">
-          <h3>Admin Sekolah</h3>
-          <p>Memegang kendali penuh. Mengelola master data, memantau analitik seluruh kelas secara langsung, mengatur jadwal, hingga mengekspor laporan akhir ke dinas terkait dengan sangat mudah tanpa kertas.</p>
+          <h3 class="heading-md">Admin Sekolah</h3>
+          <p class="body-text">Memegang kendali penuh. Mengelola master data, memantau analitik seluruh kelas secara langsung, mengatur jadwal, hingga mengekspor laporan akhir ke dinas terkait dengan sangat mudah tanpa kertas.</p>
         </div>
       </div>
 
-      <div class="role-half role-guru reveal delay-1">
-        <div class="role-image">
+      <div class="role-half role-guru reveal">
+        <div class="role-image parallax">
           <div class="device-placeholder phone">
             <img src="images/role-guru.png" alt="Guru Screenshot" class="app-screenshot" onerror="this.style.display='none'">
           </div>
         </div>
         <div class="role-content">
-          <h3>Guru / Pengajar</h3>
-          <p>Fokus mengajar tanpa beban administrasi. Antarmuka sangat ringkas khusus untuk presensi harian super cepat, input nilai ujian, dan pemberian poin kedisiplinan langsung dari genggaman ponsel Anda.</p>
+          <h3 class="heading-md">Guru / Pengajar</h3>
+          <p class="body-text">Fokus mengajar tanpa beban administrasi. Antarmuka sangat ringkas khusus untuk presensi harian super cepat, input nilai ujian, dan pemberian poin kedisiplinan langsung dari genggaman ponsel Anda.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Feature 1: First-Teacher Attendance -->
-  <section id="fitur" class="feature-section feature-dark">
+  <section id="fitur" class="feature-section s-cream f-attendance">
     <div class="feature-inner">
-      <div class="feature-text">
-        <p class="feature-eyebrow reveal">Fitur Unggulan</p>
-        <h2 class="feature-title reveal">Absensi Harian<br><span class="gradient-text">"First-Teacher"</span></h2>
-        <p class="feature-desc reveal">Sistem absensi tercanggih yang secara otomatis mengunci absensi pagi berdasarkan guru pertama yang mengabsen. Guru mata pelajaran lain tetap bisa mencatat absensi di sesi mereka sendiri.</p>
-        <p class="feature-desc reveal">Kepala sekolah mendapat data riil. Guru mapel mendapat rekap spesifik.</p>
+      <div class="feature-text reveal-left">
+        <p class="feature-eyebrow eyebrow">Fitur Unggulan</p>
+        <h2 class="feature-title heading-lg">Absensi Harian <span class="serif-italic">First-Teacher</span></h2>
+        <p class="feature-desc body-text">Sistem absensi tercanggih yang secara otomatis mengunci absensi pagi berdasarkan guru pertama yang mengabsen. Guru mata pelajaran lain tetap bisa mencatat absensi di sesi mereka sendiri.</p>
+        <p class="feature-desc body-text">Kepala sekolah mendapat data riil. Guru mapel mendapat rekap spesifik.</p>
       </div>
-      <div class="feature-visual reveal">
-        <!-- PLACEHOLDER: feature-attendance.png — UI absensi dengan checklist siswa dan status lock -->
-        <div class="device-placeholder phone" data-label="feature-attendance.png">
+      <div class="feature-visual reveal-scale">
+        <div class="device-placeholder phone parallax" data-label="feature-attendance.png">
           <img src="images/feature-attendance.png" alt="Absensi Screenshot" class="app-screenshot" onerror="this.style.display='none'">
           <div class="device-screen">
             <div class="screen-header small"></div>
@@ -134,16 +149,15 @@
   </section>
 
   <!-- Feature 2: Bulk Upload -->
-  <section class="feature-section feature-light">
+  <section class="feature-section s-dark f-upload">
     <div class="feature-inner reverse">
-      <div class="feature-text">
-        <p class="feature-eyebrow reveal">Onboarding</p>
-        <h2 class="feature-title reveal">Upload Kilat<br><span class="gradient-text">60 Detik</span></h2>
-        <p class="feature-desc reveal">Tidak perlu menginput nama siswa satu per satu. Unduh Template Excel kami, isi, unggah kembali. Ratusan data siswa masuk dalam hitungan detik.</p>
+      <div class="feature-text reveal-right">
+        <p class="feature-eyebrow eyebrow">Onboarding</p>
+        <h2 class="feature-title heading-lg">Upload Kilat <span class="serif-italic gradient-text">60 Detik</span></h2>
+        <p class="feature-desc body-text">Tidak perlu menginput nama siswa satu per satu. Unduh Template Excel kami, isi, unggah kembali. Ratusan data siswa masuk dalam hitungan detik.</p>
       </div>
-      <div class="feature-visual reveal">
-        <!-- PLACEHOLDER: feature-upload.png — UI upload Excel dengan progress bar -->
-        <div class="device-placeholder wide" data-label="feature-upload.png">
+      <div class="feature-visual reveal-scale">
+        <div class="device-placeholder wide parallax" data-label="feature-upload.png">
           <img src="images/feature-upload.png" alt="Upload Screenshot" class="app-screenshot" onerror="this.style.display='none'">
           <div class="device-screen">
             <div class="upload-anim">
@@ -158,16 +172,15 @@
   </section>
 
   <!-- Feature 3: Real-Time Dashboard -->
-  <section class="feature-section feature-dark f-dashboard">
+  <section class="feature-section s-cream f-dashboard">
     <div class="feature-inner">
-      <div class="feature-text">
-        <p class="feature-eyebrow reveal">Analitik</p>
-        <h2 class="feature-title reveal">Dasbor<br><span class="gradient-text">Real-Time</span></h2>
-        <p class="feature-desc reveal">Pantau denyut nadi sekolah Anda secara langsung. Grafik rekapitulasi harian: Hadir, Sakit, Izin, dan Alfa di seluruh sekolah, detik itu juga.</p>
+      <div class="feature-text reveal-left">
+        <p class="feature-eyebrow eyebrow">Analitik</p>
+        <h2 class="feature-title heading-lg">Dasbor <span class="serif-italic">Real-Time</span></h2>
+        <p class="feature-desc body-text">Pantau denyut nadi sekolah Anda secara langsung. Grafik rekapitulasi harian: Hadir, Sakit, Izin, dan Alfa di seluruh sekolah, detik itu juga.</p>
       </div>
-      <div class="feature-visual reveal">
-        <!-- PLACEHOLDER: feature-dashboard.png — dashboard analitik dengan chart dan angka -->
-        <div class="device-placeholder wide" data-label="feature-dashboard.png">
+      <div class="feature-visual reveal-scale">
+        <div class="device-placeholder wide parallax" data-label="feature-dashboard.png">
           <img src="images/feature-dashboard.png" alt="Dashboard Screenshot" class="app-screenshot" onerror="this.style.display='none'">
           <div class="device-screen">
             <div class="screen-header"></div>
@@ -183,16 +196,15 @@
   </section>
 
   <!-- Feature 4: Discipline Points -->
-  <section class="feature-section feature-light f-discipline">
+  <section class="feature-section s-dark f-discipline">
     <div class="feature-inner reverse">
-      <div class="feature-text">
-        <p class="feature-eyebrow reveal">Kedisiplinan</p>
-        <h2 class="feature-title reveal">Poin<br><span class="gradient-text">Kedisiplinan</span></h2>
-        <p class="feature-desc reveal">Bukan sekadar absensi. Guru dapat langsung memberikan poin pelanggaran kepada siswa di layar yang sama saat mereka melakukan absensi. Pemantauan karakter siswa menjadi transparan.</p>
+      <div class="feature-text reveal-right">
+        <p class="feature-eyebrow eyebrow">Kedisiplinan</p>
+        <h2 class="feature-title heading-lg">Poin <span class="serif-italic gradient-text">Kedisiplinan</span></h2>
+        <p class="feature-desc body-text">Bukan sekadar absensi. Guru dapat langsung memberikan poin pelanggaran kepada siswa di layar yang sama saat mereka melakukan absensi. Pemantauan karakter siswa menjadi transparan.</p>
       </div>
-      <div class="feature-visual reveal">
-        <!-- PLACEHOLDER: feature-discipline.png — UI poin kedisiplinan siswa -->
-        <div class="device-placeholder phone" data-label="feature-discipline.png">
+      <div class="feature-visual reveal-scale">
+        <div class="device-placeholder phone parallax" data-label="feature-discipline.png">
           <img src="images/feature-discipline.png" alt="Discipline Screenshot" class="app-screenshot" onerror="this.style.display='none'">
           <div class="device-screen">
             <div class="screen-header small"></div>
@@ -207,16 +219,15 @@
   </section>
 
   <!-- Feature 5: Analitik Kelas -->
-  <section class="feature-section feature-dark f-analytics">
+  <section class="feature-section s-cream f-analytics">
     <div class="feature-inner">
-      <div class="feature-text">
-        <p class="feature-eyebrow reveal">Wawasan Mendalam</p>
-        <h2 class="feature-title reveal">Analitik <span class="gradient-text">Kelas</span></h2>
-        <p class="feature-desc reveal">Pantau perkembangan setiap kelas secara komprehensif. Bandingkan tingkat kehadiran, rata-rata kedisiplinan, dan tren performa kelas dengan grafik yang mudah dipahami.</p>
+      <div class="feature-text reveal-left">
+        <p class="feature-eyebrow eyebrow">Wawasan Mendalam</p>
+        <h2 class="feature-title heading-lg">Analitik <span class="serif-italic">Kelas</span></h2>
+        <p class="feature-desc body-text">Pantau perkembangan setiap kelas secara komprehensif. Bandingkan tingkat kehadiran, rata-rata kedisiplinan, dan tren performa kelas dengan grafik yang mudah dipahami.</p>
       </div>
-      <div class="feature-visual reveal">
-        <!-- PLACEHOLDER: feature-class-analytics.png -->
-        <div class="device-placeholder wide" data-label="feature-class-analytics.png">
+      <div class="feature-visual reveal-scale">
+        <div class="device-placeholder wide parallax" data-label="feature-class-analytics.png">
           <img src="images/feature-class-analytics.png" alt="Analitik Kelas" class="app-screenshot" onerror="this.style.display='none'">
           <div class="device-screen">
             <div class="screen-header"></div>
@@ -231,15 +242,15 @@
   </section>
 
   <!-- Feature 6: Raport PDF -->
-  <section class="feature-section feature-light f-report">
-    <div class="feature-inner">
-      <div class="feature-text">
-        <p class="feature-eyebrow reveal">Otomatisasi Laporan</p>
-        <h2 class="feature-title reveal">Raport dalam <span class="gradient-text">Satu Klik</span></h2>
-        <p class="feature-desc reveal">Tidak perlu lagi menyusun raport secara manual. Sistem otomatis merangkum nilai, absensi, dan kedisiplinan menjadi dokumen PDF resmi yang siap dicetak atau dibagikan ke wali murid.</p>
+  <section class="feature-section s-dark f-report">
+    <div class="feature-inner reverse">
+      <div class="feature-text reveal-right">
+        <p class="feature-eyebrow eyebrow">Otomatisasi Laporan</p>
+        <h2 class="feature-title heading-lg">Raport dalam <span class="serif-italic gradient-text">Satu Klik</span></h2>
+        <p class="feature-desc body-text">Tidak perlu lagi menyusun raport secara manual. Sistem otomatis merangkum nilai, absensi, dan kedisiplinan menjadi dokumen PDF resmi yang siap dicetak atau dibagikan ke wali murid.</p>
       </div>
-      <div class="feature-visual">
-        <div class="pdf-reveal-container reveal reveal-special">
+      <div class="feature-visual reveal-scale">
+        <div class="pdf-reveal-container parallax">
           <img src="images/feature-report.png" alt="Raport PDF Screenshot" class="pdf-screenshot" onerror="this.style.display='none'">
           <div class="pdf-logo-wrapper">
             <div class="pdf-file-icon">
@@ -252,16 +263,15 @@
   </section>
 
   <!-- Feature 7: Login Mudah -->
-  <section class="feature-section f-login">
+  <section class="feature-section s-cream f-login">
     <div class="feature-inner">
-      <div class="feature-text">
-        <p class="feature-eyebrow reveal">Akses</p>
-        <h2 class="feature-title reveal">Login<br><span class="gradient-text">Tanpa Ribet</span></h2>
-        <p class="feature-desc reveal">Pendaftaran menggunakan sistem Username unik. Bebas dari kerepotan verifikasi email yang rumit. Guru gaptek sekalipun bisa langsung masuk dan menggunakan aplikasi.</p>
+      <div class="feature-text reveal-left">
+        <p class="feature-eyebrow eyebrow">Akses</p>
+        <h2 class="feature-title heading-lg">Login <span class="serif-italic">Tanpa Ribet</span></h2>
+        <p class="feature-desc body-text">Pendaftaran menggunakan sistem Username unik. Bebas dari kerepotan verifikasi email yang rumit. Guru gaptek sekalipun bisa langsung masuk dan menggunakan aplikasi.</p>
       </div>
-      <div class="feature-visual reveal">
-        <!-- PLACEHOLDER: feature-login.png — UI login sederhana dengan username -->
-        <div class="device-placeholder wide" data-label="feature-login.png">
+      <div class="feature-visual reveal-scale">
+        <div class="device-placeholder wide parallax" data-label="feature-login.png">
           <img src="images/feature-login.png" alt="Login Screenshot" class="app-screenshot" onerror="this.style.display='none'">
           <div class="device-screen">
             <div class="login-form">
@@ -277,20 +287,20 @@
   </section>
 
   <!-- Feature: App Dark/Light Mode -->
-  <section class="feature-section feature-dark">
-    <div class="feature-inner">
-      <div class="feature-text">
-        <p class="feature-eyebrow reveal">Personalisasi</p>
-        <h2 class="feature-title reveal">Mode Gelap<br><span class="gradient-text">& Terang</span></h2>
-        <p class="feature-desc reveal">Aplikasi kami beradaptasi dengan gaya Anda. Gunakan mode gelap untuk kenyamanan mata di malam hari, atau mode terang untuk visibilitas maksimal di bawah terik matahari.</p>
+  <section class="feature-section s-dark">
+    <div class="feature-inner reverse">
+      <div class="feature-text reveal-right">
+        <p class="feature-eyebrow eyebrow">Personalisasi</p>
+        <h2 class="feature-title heading-lg">Mode Gelap <span class="serif-italic gradient-text">& Terang</span></h2>
+        <p class="feature-desc body-text">Aplikasi kami beradaptasi dengan gaya Anda. Gunakan mode gelap untuk kenyamanan mata di malam hari, atau mode terang untuk visibilitas maksimal di bawah terik matahari.</p>
         
         <div class="app-theme-controls reveal">
           <button class="theme-btn active" data-mode="dark">Mode Gelap</button>
           <button class="theme-btn" data-mode="light">Mode Terang</button>
         </div>
       </div>
-      <div class="feature-visual reveal">
-        <div class="app-theme-mockup">
+      <div class="feature-visual reveal-scale">
+        <div class="app-theme-mockup parallax">
           <img src="images/app-dark.png" alt="EduTrack Mode Gelap" class="app-img dark-img active">
           <img src="images/app-light.png" alt="EduTrack Mode Terang" class="app-img light-img">
         </div>
@@ -299,31 +309,31 @@
   </section>
 
   <!-- Feature 8: Keamanan Data -->
-  <section class="security-section">
+  <section class="security-section s-dark">
     <div class="data-grid">
       <div class="data-beam v1"></div>
       <div class="data-beam v2"></div>
       <div class="data-beam h1"></div>
       <div class="data-beam h2"></div>
     </div>
-    <div class="security-bg-text">RLS</div>
-    <div class="security-content reveal" style="transform: translateY(40px) scale(0.95);">
+    <div class="security-bg-text parallax">RLS</div>
+    <div class="security-content reveal-scale">
       <div class="security-shield"></div>
-      <h2 class="security-title">Keamanan Data Lapis Baja</h2>
-      <p class="security-desc">Kami menggunakan protokol Row Level Security (RLS) berstandar kelas dunia. Data setiap sekolah, guru, dan siswa dienkripsi dan diisolasi secara mutlak. Privasi Anda terjaga tanpa kompromi.</p>
+      <h2 class="security-title heading-lg">Keamanan Data <span class="serif-italic gradient-text">Lapis Baja</span></h2>
+      <p class="security-desc body-text">Kami menggunakan protokol Row Level Security (RLS) berstandar kelas dunia. Data setiap sekolah, guru, dan siswa dienkripsi dan diisolasi secara mutlak. Privasi Anda terjaga tanpa kompromi.</p>
     </div>
   </section>
 
   <!-- Feature 9: EduDB Archive -->
-  <section class="edudb-section">
+  <section class="edudb-section s-cream">
     <div class="edudb-inner">
       <div class="reveal">
-        <p class="feature-eyebrow">Arsip & Backup</p>
-        <h2 class="section-title" style="margin-bottom: 24px;">Format Eksklusif <span class="gradient-text">.edudb</span></h2>
-        <p class="feature-desc" style="max-width: 600px; margin: 0 auto 48px;">Arsip seluruh data alumni dan riwayat siswa dalam format file database mandiri. Aman, mudah dipindahkan, dan selamanya menjadi milik Anda.</p>
+        <p class="feature-eyebrow eyebrow">Arsip & Backup</p>
+        <h2 class="section-title heading-xl" style="margin-bottom: 24px;">Format Eksklusif <span class="serif-italic">.edudb</span></h2>
+        <p class="feature-desc body-text" style="max-width: 600px; margin: 0 auto 48px;">Arsip seluruh data alumni dan riwayat siswa dalam format file database mandiri. Aman, mudah dipindahkan, dan selamanya menjadi milik Anda.</p>
       </div>
       
-      <div class="edudb-showcase reveal">
+      <div class="edudb-showcase reveal-scale">
         <!-- Giant CSS Logo -->
         <div class="edudb-graphic">
           <div class="edudb-icon">
@@ -335,7 +345,7 @@
         </div>
         
         <!-- Screenshot Placeholder -->
-        <div class="edudb-screenshot">
+        <div class="edudb-screenshot parallax">
           <div class="device-placeholder wide" data-label="screenshot-edudb.png">
             <img src="images/screenshot-edudb.png" alt="EduDB Screenshot" class="app-screenshot" onerror="this.style.display='none'">
             <div class="device-screen">
@@ -349,66 +359,66 @@
   </section>
 
   <!-- Micro Features Section -->
-  <section id="cara-kerja" class="micro-section">
+  <section class="micro-section s-dark">
     <div class="micro-inner">
-      <p class="feature-eyebrow reveal">Fitur Pendukung</p>
-      <h2 class="section-title reveal">Dirancang untuk<br><span class="gradient-text">Setiap Detail</span></h2>
+      <p class="feature-eyebrow eyebrow reveal">Fitur Pendukung</p>
+      <h2 class="section-title heading-lg reveal">Dirancang untuk <span class="serif-italic gradient-text">Setiap Detail</span></h2>
       <div class="micro-grid">
         <div class="micro-card reveal">
           <div class="micro-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
           </div>
-          <h3>Aplikasi Super Ringan</h3>
-          <p>Dapat diinstal di HP atau laptop apa saja langsung dari browser tanpa perlu menghabiskan memori perangkat Anda.</p>
+          <h3 class="heading-md" style="font-size:1.2rem;">Aplikasi Super Ringan</h3>
+          <p class="body-text">Dapat diinstal di HP atau laptop apa saja langsung dari browser tanpa perlu menghabiskan memori perangkat Anda.</p>
         </div>
         <div class="micro-card reveal">
           <div class="micro-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
           </div>
-          <h3>Akademik Terpadu</h3>
-          <p>Proses kenaikan kelas, kelulusan, hingga cetak Raport PDF dapat dilakukan dengan sangat mudah.</p>
+          <h3 class="heading-md" style="font-size:1.2rem;">Akademik Terpadu</h3>
+          <p class="body-text">Proses kenaikan kelas, kelulusan, hingga cetak Raport PDF dapat dilakukan dengan sangat mudah.</p>
         </div>
         <div class="micro-card reveal">
           <div class="micro-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path><path d="m9 12 2 2 4-4"></path></svg>
           </div>
-          <h3>Keamanan Data RLS</h3>
-          <p>Data Anda sangat aman berkat sistem Row Level Security. Data satu sekolah dipastikan tidak akan pernah bocor ke sekolah lain.</p>
+          <h3 class="heading-md" style="font-size:1.2rem;">Keamanan Data RLS</h3>
+          <p class="body-text">Data Anda sangat aman berkat sistem Row Level Security. Data satu sekolah dipastikan tidak akan pernah bocor ke sekolah lain.</p>
         </div>
         <div class="micro-card reveal">
           <div class="micro-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><path d="M8 13h2"></path><path d="M8 17h2"></path><path d="M14 13h2"></path><path d="M14 17h2"></path></svg>
           </div>
-          <h3>Export Rekapan Excel</h3>
-          <p>Tarik laporan kehadiran siswa atau kinerja guru dalam format Excel kapan saja hanya dengan satu klik.</p>
+          <h3 class="heading-md" style="font-size:1.2rem;">Export Rekapan Excel</h3>
+          <p class="body-text">Tarik laporan kehadiran siswa atau kinerja guru dalam format Excel kapan saja hanya dengan satu klik.</p>
         </div>
         <div class="micro-card reveal">
           <div class="micro-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path><path d="m15 5 4 4"></path></svg>
           </div>
-          <h3>Input Nilai Dinamis</h3>
-          <p>Catat nilai siswa berdasarkan Jenis dan Sesi secara fleksibel langsung dari genggaman Anda.</p>
+          <h3 class="heading-md" style="font-size:1.2rem;">Input Nilai Dinamis</h3>
+          <p class="body-text">Catat nilai siswa berdasarkan Jenis dan Sesi secara fleksibel langsung dari genggaman Anda.</p>
         </div>
         <div class="micro-card reveal">
           <div class="micro-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
           </div>
-          <h3>Lapor Error 1-Klik</h3>
-          <p>Menemukan kendala? Ada tombol khusus di dalam aplikasi agar tim kami bisa langsung membantu Anda.</p>
+          <h3 class="heading-md" style="font-size:1.2rem;">Lapor Error 1-Klik</h3>
+          <p class="body-text">Menemukan kendala? Ada tombol khusus di dalam aplikasi agar tim kami bisa langsung membantu Anda.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Pricing -->
-  <section id="harga" class="pricing-section">
+  <section id="harga" class="pricing-section s-cream">
     <div class="pricing-inner">
-      <p class="feature-eyebrow reveal">Harga Transparan</p>
-      <h2 class="section-title reveal">Fitur Tanpa Batas.<br><span class="gradient-text">Satu Harga Bersahabat.</span></h2>
-      <div class="pricing-card reveal">
-        <h3 class="pricing-name">Paket Sekolah</h3>
-        <div class="pricing-price">Rp 20.000<span class="pricing-period">/bulan</span></div>
-        <p class="pricing-desc">Nikmati seluruh fitur unggulan EduTrack tanpa batasan jumlah guru atau siswa.</p>
+      <p class="feature-eyebrow eyebrow reveal">Harga Transparan</p>
+      <h2 class="section-title heading-xl reveal">Fitur Tanpa Batas. <span class="serif-italic">Satu Harga Bersahabat.</span></h2>
+      <div class="pricing-card reveal-scale">
+        <h3 class="pricing-name heading-md">Paket Sekolah</h3>
+        <div class="pricing-price heading-xl">Rp 20.000<span class="pricing-period">/bulan</span></div>
+        <p class="pricing-desc body-text">Nikmati seluruh fitur unggulan EduTrack tanpa batasan jumlah guru atau siswa.</p>
         <ul class="pricing-features">
           <li><span>✔</span> Akses Semua Fitur Premium</li>
           <li><span>✔</span> Aplikasi Super Ringan Bisa Diinstal (PWA)</li>
@@ -422,44 +432,44 @@
   </section>
 
   <!-- Benefits -->
-  <section id="manfaat" class="benefits-section">
+  <section id="manfaat" class="benefits-section s-dark">
     <div class="benefits-inner">
-      <p class="feature-eyebrow reveal">Manfaat</p>
-      <h2 class="section-title reveal">Mengapa<br><span class="gradient-text">EduTrack?</span></h2>
+      <p class="feature-eyebrow eyebrow reveal">Manfaat</p>
+      <h2 class="section-title heading-lg reveal">Mengapa <span class="serif-italic gradient-text">EduTrack?</span></h2>
       <div class="benefits-list">
         <div class="benefit-item reveal">
           <div class="benefit-number">01</div>
           <div class="benefit-content">
-            <h3>Bebas Kertas & Ramah Lingkungan</h3>
-            <p>Pangkas anggaran pencetakan buku absen tahunan hingga 100%.</p>
+            <h3 class="heading-md" style="font-size:1.4rem;">Bebas Kertas & Ramah Lingkungan</h3>
+            <p class="body-text">Pangkas anggaran pencetakan buku absen tahunan hingga 100%.</p>
           </div>
         </div>
         <div class="benefit-item reveal">
           <div class="benefit-number">02</div>
           <div class="benefit-content">
-            <h3>Waktu Guru Lebih Produktif</h3>
-            <p>Proses absensi dari 10 menit menjadi hanya 30 detik.</p>
+            <h3 class="heading-md" style="font-size:1.4rem;">Waktu Guru Lebih Produktif</h3>
+            <p class="body-text">Proses absensi dari 10 menit menjadi hanya 30 detik.</p>
           </div>
         </div>
         <div class="benefit-item reveal">
           <div class="benefit-number">03</div>
           <div class="benefit-content">
-            <h3>Data Akurat 100%</h3>
-            <p>Hindari manipulasi absen dan kesalahan rekapitulasi manual.</p>
+            <h3 class="heading-md" style="font-size:1.4rem;">Data Akurat 100%</h3>
+            <p class="body-text">Hindari manipulasi absen dan kesalahan rekapitulasi manual.</p>
           </div>
         </div>
         <div class="benefit-item reveal">
           <div class="benefit-number">04</div>
           <div class="benefit-content">
-            <h3>Keamanan Tingkat Tinggi</h3>
-            <p>Data terenkripsi dan terisolasi secara ketat antar sekolah.</p>
+            <h3 class="heading-md" style="font-size:1.4rem;">Keamanan Tingkat Tinggi</h3>
+            <p class="body-text">Data terenkripsi dan terisolasi secara ketat antar sekolah.</p>
           </div>
         </div>
         <div class="benefit-item reveal">
           <div class="benefit-number">05</div>
           <div class="benefit-content">
-            <h3>Siap Laporan Kapan Saja</h3>
-            <p>Kepala sekolah tidak perlu menunggu akhir semester untuk melihat tren kehadiran.</p>
+            <h3 class="heading-md" style="font-size:1.4rem;">Siap Laporan Kapan Saja</h3>
+            <p class="body-text">Kepala sekolah tidak perlu menunggu akhir semester untuk melihat tren kehadiran.</p>
           </div>
         </div>
       </div>
@@ -467,10 +477,10 @@
   </section>
 
   <!-- CTA Section -->
-  <section id="kontak" class="cta-section">
+  <section id="kontak" class="cta-section s-cream">
     <div class="cta-inner">
-      <h2 class="cta-title reveal">Siap Merevolusi<br><span class="gradient-text">Sekolah Anda?</span></h2>
-      <p class="cta-desc reveal">Bergabung dengan ratusan sekolah yang sudah beralih ke sistem digital EduTrack.</p>
+      <h2 class="cta-title heading-xl reveal">Siap Merevolusi <span class="serif-italic">Sekolah Anda?</span></h2>
+      <p class="cta-desc body-text reveal">Bergabung dengan ratusan sekolah yang sudah beralih ke sistem digital EduTrack.</p>
       <div class="cta-buttons reveal">
         <a href="#" class="btn btn-primary btn-large">Mulai Sekarang</a>
         <a href="#" class="btn btn-ghost btn-large">Jadwalkan Demo</a>
@@ -479,28 +489,28 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-inner">
+  <footer class="footer s-dark">
+    <div class="footer-inner container">
       <div class="footer-top">
         <div class="footer-brand">
           <span class="footer-logo">EduTrack</span>
-          <p>Ekosistem absensi dan akademik digital untuk sekolah modern Indonesia.</p>
+          <p class="body-text" style="font-size:0.9rem;">Ekosistem absensi dan akademik digital untuk sekolah modern Indonesia.</p>
         </div>
         <div class="footer-links">
           <div class="footer-col">
-            <h4>Produk</h4>
+            <h4 class="eyebrow">Produk</h4>
             <a href="#fitur">Fitur</a>
             <a href="#cara-kerja">Cara Kerja</a>
             <a href="#manfaat">Manfaat</a>
           </div>
           <div class="footer-col">
-            <h4>Perusahaan</h4>
+            <h4 class="eyebrow">Perusahaan</h4>
             <a href="#">Tentang Kami</a>
             <a href="#">Karir</a>
             <a href="#">Blog</a>
           </div>
           <div class="footer-col">
-            <h4>Dukungan</h4>
+            <h4 class="eyebrow">Dukungan</h4>
             <a href="#">FAQ</a>
             <a href="#">Kontak</a>
             <a href="#">Kebijakan Privasi</a>
@@ -508,7 +518,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 EduTrack. Hak cipta dilindungi.</p>
+        <p>&copy; 2026 EduTrack. Hak cipta dilindungi.</p>
       </div>
     </div>
   </footer>
