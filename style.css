@@ -74,17 +74,17 @@ img{max-width:100%;display:block}
 .mobile-nav a:hover{color:var(--accent)}
 
 /* ─── HERO ─── */
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--gutter) 60px;position:relative;overflow:hidden}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:calc(var(--nav-h) + 40px) var(--gutter) 60px;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 20%,rgba(41,151,255,.08) 0%,transparent 60%);pointer-events:none}
-.hero-content{max-width:var(--max);margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;padding-bottom:40px}
-.hero-text{display:flex;flex-direction:column;gap:16px}
+.hero-content{max-width:var(--max);margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px, 8vw, 80px);align-items:center;padding-bottom:0}
+.hero-text{display:flex;flex-direction:column;gap:20px}
 .hero-eyebrow{font-size:.75rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.2em}
-.hero-title{font-size:clamp(4rem,12vw,8rem);font-weight:900;line-height:.88;letter-spacing:-.04em;color:var(--fg)}
+.hero-title{font-size:clamp(3.5rem,8vw,6.5rem);font-weight:900;line-height:.95;letter-spacing:-.04em;color:var(--fg)}
 .hero-title .serif-italic{display:block;font-size:.85em;color:var(--fg2);margin-top:4px}
-.hero-subtitle{font-size:clamp(1rem,2vw,1.3rem);color:var(--fg2);max-width:420px;line-height:1.6}
-.hero-ctas{display:flex;gap:12px;margin-top:8px}
-.hero-image{display:flex;justify-content:flex-end;align-items:flex-end}
-.hero-image-actual{width:100%;max-width:500px;height:auto;object-fit:contain}
+.hero-subtitle{font-size:clamp(1rem,2vw,1.3rem);color:var(--fg2);max-width:480px;line-height:1.6}
+.hero-ctas{display:flex;gap:12px;margin-top:12px}
+.hero-image{display:flex;justify-content:center;align-items:center}
+.hero-image-actual{width:100%;max-width:600px;height:auto;object-fit:contain}
 .hero-scroll{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px}
 .hero-scroll span{font-size:.7rem;color:var(--fg2);text-transform:uppercase;letter-spacing:.15em}
 .scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,var(--fg2),transparent);animation:scrollPulse 2s ease-in-out infinite}
